@@ -9,11 +9,16 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello Build'
+                echo 'Hello Build'
+                echo 'Hello Build'
+                sleep(3)
             }
         }
         stage('Test') {
              steps {
                 echo 'Hello Test'
+                echo 'Hello Test'
+                sleep(3)
              }
         }
         stage('Susi') {
