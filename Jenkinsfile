@@ -4,11 +4,27 @@ pipeline {
             label "linux"
         }
     }
+
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                echo 'Hello Build'
             }
+        }
+        stage('Test') {
+             steps {
+                echo 'Hello Test'
+             }
+        }
+        stage('Susi') {
+             steps {
+                echo 'Hello Susi'
+             }
+        }
+        stage('Deploy') {
+             steps {
+                echo 'Hello Deploy'
+             }
         }
     }
 
